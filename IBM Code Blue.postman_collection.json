@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "025fda35-e9b8-470f-932d-2652031e541d",
+		"name": "IBM Code Blue",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Comparison",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"countryCodes\": [\r\n\t\t\"US\",\r\n\t\t\"BR\"\r\n\t],\r\n\t\"compareBy\": \"TotalConfirmed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/v1/comparison"
+			},
+			"response": []
+		},
+		{
+			"name": "Summary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/v1/summary"
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
